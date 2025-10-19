@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+}
+/* .example{
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 1px solid black;
+}
+.example img{
+    width: 25%;
+    display: block;
+}
+ */
+
+/* Utility class */
+.nowrap{
+    white-space:nowrap;
+}
+/* End utility class */
+.container{
+   background-image: url('./map-2176x1451.png');
+   background-size: cover;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid black;
+    gap: 30px;
+    /* background-color:rgba(0, 0, 0, 0.527); */
+    /* background-repeat: no-repeat; */
+    background-color: rgba(0, 0, 0, 0.226);
+}
+.profire-picture{
+    width: 25%;
+}
+.profire-picture img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+figcaption{
+    text-align: center;
+}
+.h1{
+    padding: 80px;
+    border-radius: 30px;
+}
+h1{
+    color: white;
+    font-size: 5rem;
+    opacity: 1;
+}
+
+
+
