@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+/* || GENERAL STYLES */
+body {
+  font: 1.5rem "Nunito", sans-serif;
+  min-height: 100vh;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+header,main,footer{
+  text-align: center;
+  place-content: center;
+}
+main{
+  flex-grow: 1;
+}
+header,footer{
+  background-color: gray;
+}
+@media screen and (max-width:480px) {
+    body{
+        background-color: red;
+    }
+}
