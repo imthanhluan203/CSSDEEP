@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  display: grid;
+  place-content: center;
+}
+div:nth-child(1){
+  background-color: dodgerblue;
+  transition: transform 1s;
+}
+div:nth-child(1):hover{
+  transform: skewX(10deg)
+}
+div:nth-child(2){
+  background-color: yellow;
+}
+div:last-child{
+  background-color: greenyellow;
+}
+div:hover{
+  background-color: midnightblue;
+  transition-property: background-color;
+  transition-duration: 0.15s;
+}
+div:last-child:hover{
+  transform: rotateX(180deg);
+  transition: transform 2s;
+}
+.animate{
+  animation: slide 3s linear infinite;
+}
+@keyframes slide {
+  0% {transform: translateX(0px) rotateZ(0deg)}
+  20% {transform: translateX(300px) rotateZ(180deg)}
+  60% {transform: translateX(0px) rotateZ(0deg)}
+  80% {transform: translateX(-300px) rotateZ(-180deg)}
+  100% {transform: translateX(0px) rotateZ(0deg)}
+}
